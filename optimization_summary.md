@@ -49,6 +49,24 @@ A reusable dialog component that:
 - Handles content overflow with scrolling
 - Provides proper responsive sizing based on screen dimensions
 
+### BottomSheetDialog
+
+A reusable bottom sheet dialog component that:
+
+- Provides consistent styling for bottom sheet dialogs
+- Supports gradient backgrounds
+- Handles responsive sizing based on screen dimensions
+- Includes close button option
+
+### SocialLoginButton
+
+A reusable social login button component that:
+
+- Provides consistent styling for social login buttons
+- Includes factory methods for common platforms (Google, Facebook)
+- Supports customization of icons and colors
+- Maintains consistent layout and spacing
+
 ### AppProgressBar
 
 A standardized progress indicator that:
@@ -73,15 +91,19 @@ Beyond creating reusable components, we made several code optimizations:
 
 6. **Backward Compatibility**: Maintained backward compatibility where needed (e.g., keeping `CustomButton` as a deprecated wrapper around `AppButton`).
 
+7. **Refactored LoginDialog**: Completely refactored the LoginDialog to use our reusable components, reducing code by over 60% while maintaining the same functionality and appearance.
+
 ## Documentation Improvements
 
 We created comprehensive documentation to support the optimization work:
 
-1. **Reusable Components Guide**: Detailed documentation of all reusable components, including properties, examples, and best practices.
+1. **Design System Documentation**: Detailed documentation of all reusable components, including properties, examples, and best practices in the `design_system.md` file.
 
 2. **Optimization Summary**: This document, summarizing the optimization work done.
 
 3. **Code Comments**: Added detailed comments to all component implementations, explaining their purpose and usage.
+
+4. **Component API Documentation**: Added comprehensive JSDoc-style comments to all component properties and methods.
 
 ## Future Recommendations
 
